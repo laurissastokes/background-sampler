@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Background Sampler — Feed the Beast</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: #0a0a0a; font-family: 'DM Mono', monospace; color: white; }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4px;
+      padding: 4px;
+    }
+
+    .option {
+      position: relative;
+      height: 400px;
+      background: #1a0a2e;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .option svg {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .label {
+      position: absolute;
+      bottom: 1rem;
+      left: 1rem;
+      font-size: 0.65rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: rgba(201,151,42,0.8);
+      z-index: 10;
+    }
+
+    .sample-text {
+      position: relative;
+      z-index: 10;
+      text-align: center;
+    }
+
+    .sample-text h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3.5rem;
+      font-weight: 900;
+      color: white;
+      line-height: 0.9;
+    }
+
+    .sample-text h1 span { color: #c9972a; display: block; }
+
+    .sample-text p {
+      font-size: 0.7rem;
+      letter-spacing: 0.2em;
+      color: #c9972a;
+      margin-top: 0.75rem;
+      text-transform: uppercase;
+    }
+  </style>
+</head>
+<body>
+  <div class="grid">
+
+    <!-- OPTION A: Nervous System -->
+    <div class="option">
+      <svg viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg" opacity="0.35">
+        <g fill="none" stroke="#c9972a" stroke-width="0.8">
+          <!-- Central spine -->
+          <line x1="400" y1="0" x2="400" y2="800"/>
+          <!-- Branching nerves left -->
+          <line x1="400" y1="100" x2="250" y2="180"/>
+          <line x1="250" y1="180" x2="150" y2="140"/>
+          <line x1="250" y1="180" x2="180" y2="260"/>
+          <line x1="400" y1="200" x2="220" y2="280"/>
+          <line x1="220" y1="280" x2="100" y2="250"/>
+          <line x1="220" y1="280" x2="160" y2="360"/>
+          <line x1="160" y1="360" x2="60" y2="340"/>
+          <line x1="400" y1="300" x2="200" y2="380"/>
+          <line x1="200" y1="380" x2="80" y2="360"/>
+          <line x1="200" y1="380" x2="140" y2="460"/>
+          <line x1="400" y1="400" x2="180" y2="460"/>
+          <line x1="180" y1="460" x2="60" y2="440"/>
+          <line x1="180" y1="460" x2="120" y2="540"/>
+          <line x1="400" y1="500" x2="220" y2="560"/>
+          <line x1="220" y1="560" x2="100" y2="540"/>
+          <line x1="220" y1="560" x2="160" y2="640"/>
+          <line x1="400" y1="600" x2="240" y2="660"/>
+          <line x1="240" y1="660" x2="140" y2="640"/>
+          <line x1="400" y1="700" x2="260" y2="750"/>
+          <!-- Branching nerves right -->
+          <line x1="400" y1="100" x2="550" y2="180"/>
+          <line x1="550" y1="180" x2="650" y2="140"/>
+          <line x1="550" y1="180" x2="620" y2="260"/>
+          <line x1="400" y1="200" x2="580" y2="280"/>
+          <line x1="580" y1="280" x2="700" y2="250"/>
+          <line x1="580" y1="280" x2="640" y2="360"/>
+          <line x1="640" y1="360" x2="740" y2="340"/>
+          <line x1="400" y1="300" x2="600" y2="380"/>
+          <line x1="600" y1="380" x2="720" y2="360"/>
+          <line x1="600" y1="380" x2="660" y2="460"/>
+          <line x1="400" y1="400" x2="620" y2="460"/>
+          <line x1="620" y1="460" x2="740" y2="440"/>
+          <line x1="620" y1="460" x2="680" y2="540"/>
+          <line x1="400" y1="500" x2="580" y2="560"/>
+          <line x1="580" y1="560" x2="700" y2="540"/>
+          <line x1="580" y1="560" x2="640" y2="640"/>
+          <line x1="400" y1="600" x2="560" y2="660"/>
+          <line x1="560" y1="660" x2="660" y2="640"/>
+          <line x1="400" y1="700" x2="540" y2="750"/>
+          <!-- Node dots -->
+          <circle cx="400" cy="100" r="4" fill="#c9972a"/>
+          <circle cx="400" cy="200" r="4" fill="#c9972a"/>
+          <circle cx="400" cy="300" r="4" fill="#c9972a"/>
+          <circle cx="400" cy="400" r="4" fill="#c9972a"/>
+          <circle cx="400" cy="500" r="4" fill="#c9972a"/>
+          <circle cx="400" cy="600" r="4" fill="#c9972a"/>
+          <circle cx="400" cy="700" r="4" fill="#c9972a"/>
+          <circle cx="250" cy="180" r="3" fill="#c9972a"/>
+          <circle cx="550" cy="180" r="3" fill="#c9972a"/>
+          <circle cx="220" cy="280" r="3" fill="#c9972a"/>
+          <circle cx="580" cy="280" r="3" fill="#c9972a"/>
+          <circle cx="180" cy="460" r="3" fill="#c9972a"/>
+          <circle cx="620" cy="460" r="3" fill="#c9972a"/>
+        </g>
+      </svg>
+      <div class="sample-text">
+        <h1>Feed<span>the Beast.</span></h1>
+        <p>Welcome to the lab.</p>
+      </div>
+      <div class="label">A — Nervous System</div>
+    </div>
+
+    <!-- OPTION B: Lightning / Electrical -->
+    <div class="option">
+      <svg viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg" opacity="0.35">
+        <g fill="none" stroke="#c9972a" stroke-width="0.8">
+          <!-- Lightning bolt 1 -->
+          <polyline points="200,0 160,200 220,200 140,420 200,420 80,800"/>
+          <!-- Lightning bolt 2 -->
+          <polyline points="500,0 460,180 520,180 440,360 500,360 380,700"/>
+          <!-- Lightning bolt 3 -->
+          <polyline points="700,100 670,260 720,260 660,440 710,440 620,720"/>
+          <!-- Lightning bolt 4 small -->
+          <polyline points="100,200 80,320 110,320 60,500"/>
+          <polyline points="650,0 630,120 660,120 610,280"/>
+          <!-- Horizontal arcs -->
+          <path d="M 0,300 Q 200,260 400,300 Q 600,340 800,300" stroke-dasharray="4,8"/>
+          <path d="M 0,500 Q 200,460 400,500 Q 600,540 800,500" stroke-dasharray="4,8"/>
+          <!-- Small spark dots -->
+          <circle cx="160" cy="200" r="3" fill="#c9972a"/>
+          <circle cx="220" cy="200" r="3" fill="#c9972a"/>
+          <circle cx="140" cy="420" r="3" fill="#c9972a"/>
+          <circle cx="200" cy="420" r="3" fill="#c9972a"/>
+          <circle cx="460" cy="180" r="3" fill="#c9972a"/>
+          <circle cx="520" cy="180" r="3" fill="#c9972a"/>
+          <circle cx="440" cy="360" r="3" fill="#c9972a"/>
+          <circle cx="500" cy="360" r="3" fill="#c9972a"/>
+          <circle cx="670" cy="260" r="3" fill="#c9972a"/>
+          <circle cx="720" cy="260" r="3" fill="#c9972a"/>
+        </g>
+      </svg>
+      <div class="sample-text">
+        <h1>Feed<span>the Beast.</span></h1>
+        <p>Welcome to the lab.</p>
+      </div>
+      <div class="label">B — Lightning / Electrical</div>
+    </div>
+
+    <!-- OPTION C: Anatomical muscle diagram -->
+    <div class="option">
+      <svg viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg" opacity="0.35">
+        <g fill="none" stroke="#c9972a" stroke-width="0.8">
+          <!-- Body outline simplified -->
+          <ellipse cx="400" cy="140" rx="80" ry="100"/>
+          <!-- Shoulders -->
+          <path d="M 320,200 Q 200,220 180,320"/>
+          <path d="M 480,200 Q 600,220 620,320"/>
+          <!-- Arms -->
+          <path d="M 180,320 Q 160,420 180,500"/>
+          <path d="M 620,320 Q 640,420 620,500"/>
+          <!-- Torso -->
+          <path d="M 320,200 Q 280,300 300,450 Q 320,550 400,580 Q 480,550 500,450 Q 520,300 480,200"/>
+          <!-- Muscle lines on torso -->
+          <line x1="370" y1="250" x2="430" y2="250"/>
+          <line x1="360" y1="300" x2="440" y2="300"/>
+          <line x1="355" y1="350" x2="445" y2="350"/>
+          <line x1="355" y1="400" x2="445" y2="400"/>
+          <line x1="360" y1="450" x2="440" y2="450"/>
+          <!-- Center line -->
+          <line x1="400" y1="220" x2="400" y2="570"/>
+          <!-- Legs -->
+          <path d="M 350,580 Q 330,680 320,780"/>
+          <path d="M 450,580 Q 470,680 480,780"/>
+          <!-- Knee caps -->
+          <ellipse cx="322" cy="700" rx="20" ry="15"/>
+          <ellipse cx="478" cy="700" rx="20" ry="15"/>
+          <!-- Hand outlines -->
+          <ellipse cx="178" cy="530" rx="22" ry="30"/>
+          <ellipse cx="622" cy="530" rx="22" ry="30"/>
+          <!-- Annotation lines -->
+          <line x1="480" y1="280" x2="580" y2="240" stroke-dasharray="3,5"/>
+          <line x1="460" y1="350" x2="580" y2="340" stroke-dasharray="3,5"/>
+          <line x1="455" y1="420" x2="580" y2="430" stroke-dasharray="3,5"/>
+          <circle cx="580" cy="240" r="3" fill="#c9972a"/>
+          <circle cx="580" cy="340" r="3" fill="#c9972a"/>
+          <circle cx="580" cy="430" r="3" fill="#c9972a"/>
+        </g>
+      </svg>
+      <div class="sample-text">
+        <h1>Feed<span>the Beast.</span></h1>
+        <p>Welcome to the lab.</p>
+      </div>
+      <div class="label">C — Anatomical Diagram</div>
+    </div>
+
+    <!-- OPTION D: EKG / Brainwave -->
+    <div class="option">
+      <svg viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg" opacity="0.35">
+        <g fill="none" stroke="#c9972a" stroke-width="0.8">
+          <!-- EKG lines across the page -->
+          <polyline points="0,150 60,150 80,100 100,200 120,50 140,250 160,150 260,150 280,100 300,200 320,50 340,250 360,150 460,150 480,100 500,200 520,50 540,250 560,150 660,150 680,100 700,200 720,50 740,250 760,150 800,150"/>
+          <polyline points="0,300 60,300 80,240 100,360 120,180 140,400 160,300 260,300 280,240 300,360 320,180 340,400 360,300 460,300 480,240 500,360 520,180 540,400 560,300 660,300 680,240 700,360 720,180 740,400 760,300 800,300"/>
+          <polyline points="0,450 60,450 80,390 100,510 120,330 140,550 160,450 260,450 280,390 300,510 320,330 340,550 360,450 460,450 480,390 500,510 520,330 540,550 560,450 660,450 680,390 700,510 720,330 740,550 760,450 800,450"/>
+          <polyline points="0,600 60,600 80,540 100,660 120,480 140,700 160,600 260,600 280,540 300,660 320,480 340,700 360,600 460,600 480,540 500,660 520,480 540,700 560,600 660,600 680,540 700,660 720,480 740,700 760,600 800,600"/>
+          <!-- Brainwave style at top -->
+          <path d="M 0,50 Q 50,20 100,50 Q 150,80 200,30 Q 250,0 300,50 Q 350,90 400,40 Q 450,10 500,50 Q 550,80 600,30 Q 650,0 700,50 Q 750,80 800,50"/>
+          <!-- Dots at peaks -->
+          <circle cx="120" cy="50" r="3" fill="#c9972a"/>
+          <circle cx="320" cy="50" r="3" fill="#c9972a"/>
+          <circle cx="520" cy="50" r="3" fill="#c9972a"/>
+          <circle cx="720" cy="50" r="3" fill="#c9972a"/>
+          <circle cx="120" cy="180" r="3" fill="#c9972a"/>
+          <circle cx="320" cy="180" r="3" fill="#c9972a"/>
+          <circle cx="520" cy="180" r="3" fill="#c9972a"/>
+          <circle cx="720" cy="180" r="3" fill="#c9972a"/>
+        </g>
+      </svg>
+      <div class="sample-text">
+        <h1>Feed<span>the Beast.</span></h1>
+        <p>Welcome to the lab.</p>
+      </div>
+      <div class="label">D — EKG / Brainwave</div>
+    </div>
+
+  </div>
+</body>
+</html>
